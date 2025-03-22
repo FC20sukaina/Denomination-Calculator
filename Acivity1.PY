@@ -24,7 +24,21 @@ button1= Button(root, text = "Let's get started!, command=msg, bg = orange",fg =
 button1.place(x=260, y=360)
 def topwin():
     top =  Toplevel()
-    top.title
+    top.title("Denominations Calculator")
+    top.configure(bg='light grey')
+    top.geometry("600x300+50+50")
+
+    label = Label((top, text="Enter total amount", bg = 'light grey'))
+    entry = Entry(top)
+    lbl = Label(top, text="Here are number of notes for each denomination", bg='light grey')
+
+    l1 = Label(top, text="2000", bg = 'light grey')
+    l2 = Label(top, text="500", bg = 'light grey')
+    l3 = Label(top, text="100", bg = 'light grey')
+
+    t1 = Entry(top)
+    t2 = Entry(top)
+    t3 = Entry(top)
 def calculator():
     try:
         global amount
